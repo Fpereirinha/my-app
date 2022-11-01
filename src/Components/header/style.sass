@@ -1,0 +1,54 @@
+.content::before
+    content: url("./arrow.svg")
+.container_select
+    display: flex
+    align-items: center
+    border: none
+    font-size: 16px
+.cabecalho_selection
+    background-color: #00000000
+    border: none
+    color: white
+
+.header_container
+    display: flex
+    justify-content: space-around
+    align-items: center
+    padding: 10px 0
+.header_container_ancor
+    margin-right: 20px
+    text-decoration: none
+    color: #F1F1F1
+    background-color: #1B5F68
+    border-radius: 56px
+    padding: 8px 16px
+
+.header_img
+    width: 60px
+.ancors_header
+    background-color: #202020
+    padding: 10px 20px
+    border-radius: 64px
+    border: 2px solid #373737
+    display: flex
+    gap: 40px
+    margin-right: 70px
+    a
+        text-decoration: none
+        color: #abb3b5
+        font-size: 16px
+        box-sizing: content-box
+        &::after
+            content: ''
+            display: block
+            width: 0
+            height: 2px
+            background: #1B5F68
+            transition: width .3s
+        &:hover::after
+            width: 100%
+        &:hover
+            color:#1B5F68
+            
+
+
